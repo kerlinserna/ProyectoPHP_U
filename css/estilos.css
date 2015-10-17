@@ -1,0 +1,209 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+ body
+{
+	background-color: #ffffff;
+}
+/*
+Empiezan estilos del nav----------------------------------------------------
+*/
+.navbar
+{
+    width:100%;
+}
+.navbar-default {
+    background:#2196F3;
+    border: none;
+    color:#ffffff;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+}
+.navbar-nav{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    float:none;
+    font-size: 1em;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav>li>a
+{
+    color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar:hover {
+    background-color: #ffffff;
+}
+.navbar-default .navbar-toggle {
+    border-color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+background-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background: none;
+}
+.navbar-toggle:hover {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color:#1E88E5;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #CFD8DC;
+}
+/*
+Terminan estilos del nav--------------------------------------------------
+*/
+h1
+{
+	text-align: center;
+	padding: 0 2em 0 0;
+}
+header
+{
+	background: #32352e;
+	color: #ffffff;
+	padding: 2em 1em 1em 1em;
+	overflow: hidden;
+	height: 125px;
+	width: 100%;
+	position: relative;
+}
+a{
+	text-decoration: none;
+}
+header #yo
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 130px;
+	height: 120px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+}
+.icon_blancos{
+color: #ffffff;
+}
+.social
+{
+	left: 0;
+	position: fixed;
+	top: 55%;
+}
+.social ul
+{
+	list-style: none;
+}
+.social ul li a
+{
+	display: inline-block;
+	padding: 0.5em 0.5em;
+	font-size: 1.3em;
+	background: #000000;
+	text-decoration: none;
+	color: #ffffff;
+}
+.social ul li a:hover
+{
+	background-color: #000000;
+}
+.social ul li .icon-faceb{background-color: #0D47A1;}
+.social ul li .icon-instagram{background-color: #757575;}
+.social ul li .icon-youtube{background-color: #F44336;}
+.social ul li .icon-google-plus{background-color: #FF5722;}
+.social ul li .icon-github{background-color: #212121;}
+
+.menu-fixed
+{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	width: 100%;
+	opacity: 0.8;
+}
+.fondo
+{
+	background-color: #1E88E5;
+	color: #ffffff;
+}
+
+#navegacion-fm ul li a
+{
+	color: #ffffff;
+	font-size: 1.3em;
+}
+span
+{
+	font-size: 1em;
+}
+/*
+Estilos del Formulario de Login-----------------------------------------------
+*/
+.logincc
+{
+	text-align: center;
+	border: 1px solid #ffffff;
+	width: 400px;
+	height: auto;
+	margin: 2em auto;
+	display: block;
+}
+.logincc input
+{
+	margin: 1em;
+	padding: 1em;
+}
+form a
+{
+	color: white;
+}
+/*
+Para dispositivos móviles-------------------------------------------
+*/
+
+@media screen and (max-width:800px){
+
+	h1{
+		padding: 0 0 0 3.6em;
+	}
+}
+@media screen and (max-width:400px){
+	h1{
+		padding: 0 0 4em 4.5em;
+	}
+	header
+	{
+		padding: 0 0 2em 0;
+	}
+	.navbar-default
+	{
+		opacity: 0.8;
+	}
+	.logincc 
+{
+	display: block;
+	width: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+	.logincc input,a,img 
+{
+	margin-right: 2em;
+}
+}
