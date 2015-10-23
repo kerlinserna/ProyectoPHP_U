@@ -22,7 +22,6 @@ Empiezan estilos del nav----------------------------------------------------
     border: none;
     color:#ffffff;
     text-transform: uppercase;
-    display: inline-block;
     text-align: center;
 }
 .navbar-nav{
@@ -65,6 +64,12 @@ background-color: transparent;
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #CFD8DC;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+   margin-bottom: 0;
+    border: 1px solid transparent;
 }
 /*
 Terminan estilos del nav--------------------------------------------------
@@ -129,6 +134,10 @@ color: #ffffff;
 .social ul li .icon-google-plus{background-color: #FF5722;}
 .social ul li .icon-github{background-color: #212121;}
 
+#slides a
+{
+	display: none;
+}
 .menu-fixed
 {
 	position: fixed;
@@ -173,14 +182,36 @@ form a
 {
 	color: white;
 }
+ #slides {
+      margin: 0;
+	  padding: 0;
+    }
+#slides ul
+{
+	display: none;
+}
+/* 
+estilos del seccion 2---------------------------------------------
+ */
+ .seccion2
+ {
+ 	margin: 4px 0 0 0;
+ }
 /*
 Para dispositivos móviles-------------------------------------------
 */
 
+
 @media screen and (max-width:800px){
 
 	h1{
-		padding: 0 0 0 3.6em;
+		padding: 0 0 0 4em;
+	}
+	#slides
+	{
+		width: 100%;
+		margin: 0;
+		padding: 0;
 	}
 }
 @media screen and (max-width:400px){
@@ -206,4 +237,10 @@ Para dispositivos móviles-------------------------------------------
 {
 	margin-right: 2em;
 }
+	#slides
+	{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
 }

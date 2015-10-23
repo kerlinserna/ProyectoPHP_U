@@ -8,7 +8,40 @@
 	<link rel="stylesheet"  href="css/estilos.css">
 	<link rel="stylesheet" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
-		<link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
+	<link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js">
+	</script>
+	<style>
+    /* Prevents slides from flashing */
+    #slides {
+      display:none;
+      width: 100%;
+      margin-top: 0;
+    }
+     </style>
+	<script>
+    $(function(){
+  $("#slides").slidesjs({
+    play: {
+      active: false,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "slide",
+        // [string] Can be either "slide" or "fade".
+      interval: 2000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+  });
+});
+  </script>
 	<title>Cursos Capacitando</title>
 	</head>
 	<body>
@@ -38,24 +71,45 @@
 			</div><!--/.nav-collapse -->
 		</div>
 	</div>
-		<p>Juan diego zapata duque</p>
-		<p>Juan diego zapata duque</p>
-		<p>Juan diego zapata duque</p>
-		<p>Juan diego zapata duque</p>
-		<p>Juan diego zapata duque</p>
-		<p>Juan diego zapata duque</p>
-		<p>Juan diego zapata duque</p>
-		<p>Juan diego zapata duque</p>
-		<p>Juan diego zapata duque</p>
-		<p>Juan diego zapata duque</p>
-		<p>Juan diego zapata duque</p>
-		<p>Juan diego zapata duque</p>
-		<p>Juan diego zapata duque</p>
-		<p>Juan diego zapata duque</p>
-		<script src="https://code.jquery.com/jquery-1.11.2.min.js">
-		</script>
+  <!-- SlidesJS Required: Start Slides -->
+  <!-- The container is used to define the width of the slideshow -->
+  <div id="slides">
+    <img src="img/desktop.jpg">
+    <img src="img/mac.jpg">
+    <img src="img/pc.jpg">
+    <img src="img/pc2.jpg">
+    <img src="img/street.jpg">
+  </div>
+  <div class="seccion2">
+  	<section>
+  	<h1>Detalles de los Cursos</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+  	</section>
+  </div>
+  <!-- End SlidesJS Required: Start Slides -->
+  		<script src="js/jquery.slides.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/menufijo.js"></script>
 		<script src="js/main.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <!-- End SlidesJS Required -->
 </body>
 </html>
