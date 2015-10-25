@@ -24,12 +24,12 @@
 	</style>
 </head>
 <body>
-<form action="login.php" method="POST" name="logincc" class="logincc">
+<form action="Controller/ctllLogin.php" method="POST" name="logincc" class="logincc">
 	<img src="me.png" id="yo"/>
 	<br>
 <input type="text" name="usuario" placeholder="Ingrese su usuario" required>
 <br>
-<input type="password" name="usuario" placeholder="Ingrese su usuario" required>
+<input type="password" name="clave" placeholder="Ingrese su clave" required>
 <br>
 <br>
 <a href="http://www.w3schools.com/bootstrap/bootstrap_buttons.asp">Olvidaste tu Contraseña?</a>
@@ -42,3 +42,13 @@ id="btnaceptar"/>
 </form>
 </body>
 </html>
+<?php 
+
+if (isset($_REQUEST["Mensaje"])) {
+	
+	$mensaje=$_REQUEST["Mensaje"];
+	echo "<p>$mensaje</p>";
+}
+
+
+ ?>

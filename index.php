@@ -62,11 +62,11 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav" id="main-menu">
-					<li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-					<li><a href="#"> <span class="glyphicon glyphicon-education"></span> Courses</a></li>
-					<li><a href="login.php"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-					<li><a href="registro.php"><span class="glyphicon glyphicon-registration-mark"></span> Registrarse</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-send"></span> Contact</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+			<li><a href=".seccion2"> <span class="glyphicon glyphicon-education"></span> Courses</a></li>
+			<li><a href="login.php"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+			<li><a href="registro.php"><span class="glyphicon glyphicon-registration-mark"></span> Registrarse</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-send"></span> Contact</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>

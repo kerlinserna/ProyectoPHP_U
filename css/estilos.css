@@ -9,6 +9,7 @@
  body
 {
 	background-color: #ffffff;
+	width: 100%;
 }
 /*
 Empiezan estilos del nav----------------------------------------------------
@@ -197,6 +198,23 @@ estilos del seccion 2---------------------------------------------
  {
  	margin: 4px 0 0 0;
  }
+ /* Estilos de combo --------------- */
+
+.combobox
+{
+	background-color:#1565C0;
+	font-size: 1.1em;
+	color: #ffffff;
+	font-family: 'Montserrat Alternates', sans-serif;
+	padding: 1em;
+	cursor: pointer;
+}
+.formcourses
+{
+	text-align: center;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
 /*
 Para dispositivos móviles-------------------------------------------
 */
