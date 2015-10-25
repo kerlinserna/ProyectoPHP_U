@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <title>Registro de Profesores en CC</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilosreg.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilosreg.css">
     <link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
-   <script src="js/prefixfree.min.js"></script>   
+   <script src="../js/prefixfree.min.js"></script>   
   </head>
   <body>
     <form action="validar.php" method="POST" name="reg" class="reg">
     <div class="header">
-        <img src="me.png" id="yo"/>
+        <img src="../img/me.png" id="yo"/>
   <h1>registro de empleados cc</h1>
   </div>
   <div class="question">

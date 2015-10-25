@@ -11,7 +11,7 @@ require '../Models/ClsLogin.php';
 	}
 	else
 	{
-	header("Location:../login.php?Mensaje=Usuario o clave no válidos");			 
+	header("Location:../Views/login.php?Mensaje=Usuario o clave no válidos");			 
 	}
 
  ?>

@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet"  href="css/normalize.css">
-	<link rel="stylesheet"  href="css/estilos.css">
+	<link rel="stylesheet"  href="../css/normalize.css">
+	<link rel="stylesheet"  href="../css/estilos.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
 	<link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
 	<title>Login de Cursos Capacitando|CC</title>
@@ -21,11 +21,16 @@
 	margin-bottom: 20px;
 	border-radius: 50%;
 }
+p
+{
+	color: red;
+	font-family: 1.5em;
+}
 	</style>
 </head>
 <body>
-<form action="Controller/ctllLogin.php" method="POST" name="logincc" class="logincc">
-	<img src="me.png" id="yo"/>
+<form action="../Controller/ctllLogin.php" method="POST" name="logincc" class="logincc">
+	<img src="../img/me.png" id="yo"/>
 	<br>
 <input type="text" name="usuario" placeholder="Ingrese su usuario" required>
 <br>
@@ -34,14 +39,11 @@
 <br>
 <a href="http://www.w3schools.com/bootstrap/bootstrap_buttons.asp">Olvidaste tu Contraseña?</a>
 <br>
-<a href="registro.php">Registrarse</a>
+<a href="../Views/registro.php">Registrarse</a>
 <br>
 <input type="submit" name="btnaceptar" class="btn btn-primary" value="Aceptar" 
 id="btnaceptar"/>
 <input type="reset" name="btnaceptar" class="btn btn-danger" value="Cancelar"/>
-</form>
-</body>
-</html>
 <?php 
 
 if (isset($_REQUEST["Mensaje"])) {
@@ -49,6 +51,7 @@ if (isset($_REQUEST["Mensaje"])) {
 	$mensaje=$_REQUEST["Mensaje"];
 	echo "<p>$mensaje</p>";
 }
-
-
  ?>
+</form>
+</body>
+</html>

@@ -46,7 +46,7 @@
 	</head>
 	<body>
 	<header>
-	<img src="me.png" id="yo"/>
+	<img src="img/me.png" id="yo"/>
 	<h1>Cursos Capacitando | CC</h1>
 	</header>
 	<!--Aca empieza el nav-->
@@ -64,7 +64,7 @@
 				<ul class="nav navbar-nav" id="main-menu">
 			<li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 			<li><a href=".seccion2"> <span class="glyphicon glyphicon-education"></span> Courses</a></li>
-			<li><a href="login.php"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+			<li><a href="Views/login.php"><span class="glyphicon glyphicon-user"></span> Login</a></li>
 			<li><a href="registro.php"><span class="glyphicon glyphicon-registration-mark"></span> Registrarse</a></li>
 			<li><a href="#"><span class="glyphicon glyphicon-send"></span> Contact</a></li>
 				</ul>

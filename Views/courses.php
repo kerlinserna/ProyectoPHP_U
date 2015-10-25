@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Courses</title>
+	<title>Courses of CC</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet"  href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/estilos.css">
@@ -18,13 +18,13 @@
 	foreach($cursos as $fila )
 	 {
 
-	echo "<option value='".$fila['codigo_curso']."'>".$fila['titulo_curso'];
+	   echo "<option value='".$fila['codigo_curso']."'>".
+	   $fila['titulo_curso'];
 
 	 }
-
+	 
 	 ?>
 	 	</select>
-
 </form>
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js">
 	</script>
