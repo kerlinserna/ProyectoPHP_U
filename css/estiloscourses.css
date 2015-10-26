@@ -1,6 +1,6 @@
 .input
 {
-	width: 23.5%;
+	width: 20em;
 	height: 40px;
 	color: #215978;
 	font-size: 1.3em;
@@ -12,4 +12,11 @@ form #btnaceptar
 	padding: 0.83em 1.5em;
 	font-size: 1.2em;
 	margin-bottom: 10px;
+}
+@media screen and (max-width:400px){
+.input
+{
+	width: 17em;
+
+}
 }
