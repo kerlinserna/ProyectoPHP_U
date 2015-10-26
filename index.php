@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet"  href="css/normalize.css">
 	<link rel="stylesheet"  href="css/estilos.css">
-	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
 	<link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js">
@@ -63,9 +63,9 @@
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav" id="main-menu">
 			<li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-			<li><a href=".seccion2"> <span class="glyphicon glyphicon-education"></span> Courses</a></li>
+			<li><a href="Views/courses.php"> <span class="glyphicon glyphicon-education"></span> Courses</a></li>
 			<li><a href="Views/login.php"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-			<li><a href="registro.php"><span class="glyphicon glyphicon-registration-mark"></span> Registrarse</a></li>
+			<li><a href="Views/registro.php"><span class="glyphicon glyphicon-registration-mark"></span> Registrarse</a></li>
 			<li><a href="#"><span class="glyphicon glyphicon-send"></span> Contact</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
@@ -80,28 +80,66 @@
     <img src="img/pc2.jpg">
     <img src="img/street.jpg">
   </div>
+  <div class="progress">
+  <div class="progress-bar progress-bar-striped" style="width: 35%">
+    <span class="sr-only">35% Complete (success)</span>
+  </div>
+  <div class="progress-bar progress-bar-success progress-bar-striped" style="width: 20%">
+    <span class="sr-only">20% Complete (warning)</span>
+  </div>
+  <div class="progress-bar progress-bar-success progress-bar-striped" style="width: 10%">
+    <span class="sr-only">10% Complete (danger)</span>
+  </div>
+  <div class="progress-bar progress-bar-sucess progress-bar-striped" style="width: 20%">
+    <span class="sr-only">20% Complete (warning)</span>
+  </div>
+    <div class="progress-bar progress-bar-striped" style="width: 15%">
+    <span class="sr-only">15% Complete (success)</span>
+  </div>
+</div>
   <div class="seccion2">
   	<section>
-  	<h1>Detalles de los Cursos</h1>
+  	<h1 class="textcourses">Detalles de los Cursos</h1>
   <div class="row">
     <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>Ruby on Rails</h3>
+      <p>es un framework de aplicaciones web de código abierto escrito en el 
+      lenguaje de programación Ruby, siguiendo el paradigma de la arquitectura 
+      Modelo Vista Controlador (MVC).</p>
+      <p>Trata de combinar la simplicidad con la 
+      posibilidad de desarrollar aplicaciones del mundo real escribiendo 
+      menos código 
+      que con otros frameworks y con un mínimo de configuración.</p>
     </div>
     <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>FRONTEND</h3>
+      <p>Responsable por convertir el diseño visual e interactivo en el 
+      código de FrontEnd Aunque es un perfil muy cercano al diseñador,</p>
+      <p> el desarrollador FrontEnd traduce las interfaces visuales,
+       es decir, las trabaja en código.</p>
     </div>
     <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>Node js</h3>        
+      <p>es un entorno en tiempo de ejecución multiplataforma, de código 
+      abierto, para la capa del servidor (pero no limitándose a ello) basado 
+      en el lenguaje de programación ECMAScript, </p>
+      <p>asíncrono, con I/O de datos en una arquitectura orientada a
+       eventos y basado en el motor V8 de Google.</p>
     </div>
   </div>
   	</section>
   </div>
+  <footer>
+    <p>Todos los derechos reservados</p>
+    <p>Powered by Juan Diego Zapata y Kerly Serna</p>
+    <a href="https://www.facebook.com/profile.php?id=1514988450">
+    <span class="icon-facebook fb"></span></a>
+    <a href="https://instagram.com/juandiegozapatad/">
+    <span class="icon-instagram ig"></span></a>
+    <a href="https://github.com/jdzapataduque">
+    <span class="icon-github gh"></span></a>
+    <a href=""><span class="icon-linkedin lk"></span></a>
+  </footer>
   <!-- End SlidesJS Required: Start Slides -->
   		<script src="js/jquery.slides.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>

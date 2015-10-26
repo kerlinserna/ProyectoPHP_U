@@ -25,6 +25,7 @@ p
 {
 	color: red;
 	font-family: 1.5em;
+	text-transform: uppercase;
 }
 	</style>
 </head>
