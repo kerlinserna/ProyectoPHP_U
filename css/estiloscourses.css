@@ -1,0 +1,15 @@
+.input
+{
+	width: 23.5%;
+	height: 40px;
+	color: #215978;
+	font-size: 1.3em;
+	text-align: center;
+}
+form #btnaceptar
+{
+	text-align: center;
+	padding: 0.83em 1.5em;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}

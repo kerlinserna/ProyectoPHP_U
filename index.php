@@ -63,10 +63,10 @@
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav" id="main-menu">
 			<li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-			<li><a href="Views/courses.php"> <span class="glyphicon glyphicon-education"></span> Courses</a></li>
+			<li><a href="Views/courses.php" target="_blank"> <span class="glyphicon glyphicon-education"></span> Courses</a></li>
 			<li><a href="Views/login.php"><span class="glyphicon glyphicon-user"></span> Login</a></li>
 			<li><a href="Views/registro.php"><span class="glyphicon glyphicon-registration-mark"></span> Registrarse</a></li>
-			<li><a href="#"><span class="glyphicon glyphicon-send"></span> Contact</a></li>
+			<li><a href="#contact"><span class="glyphicon glyphicon-send"></span> Contact</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -99,7 +99,7 @@
 </div>
   <div class="seccion2">
   	<section>
-  	<h1 class="textcourses">Detalles de los Cursos</h1>
+  	<h1 class="textcourses">Información de los Cursos</h1>
   <div class="row">
     <div class="col-sm-4">
       <h3>Ruby on Rails</h3>
@@ -129,8 +129,8 @@
   </div>
   	</section>
   </div>
-  <footer>
-    <p>Todos los derechos reservados</p>
+  <footer id="contact">
+    <p>Todos los derechos reservados ®</p>
     <p>Powered by Juan Diego Zapata y Kerly Serna</p>
     <a href="https://www.facebook.com/profile.php?id=1514988450">
     <span class="icon-facebook fb"></span></a>
@@ -143,8 +143,6 @@
   <!-- End SlidesJS Required: Start Slides -->
   		<script src="js/jquery.slides.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/menufijo.js"></script>
-		<script src="js/main.js"></script>
   <!-- End SlidesJS Required -->
 
   <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
