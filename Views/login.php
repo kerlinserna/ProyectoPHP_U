@@ -33,9 +33,10 @@ p
 <form action="../Controller/ctllLogin.php" method="POST" name="logincc" class="logincc">
 	<img src="../img/me.png" id="yo"/>
 	<br>
-<input type="text" name="usuario" placeholder="Ingrese su usuario" required>
+<input type="text" name="usuario" placeholder="Ingrese su usuario" class="margin" required>
 <br>
-<input type="password" name="clave" placeholder="Ingrese su clave" required>
+<br>
+<input type="password" name="clave" placeholder="Ingrese su clave" class="margin" required>
 <br>
 <br>
 <a href="http://www.w3schools.com/bootstrap/bootstrap_buttons.asp">Olvidaste tu Contraseña?</a>

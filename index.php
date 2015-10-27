@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
 	<link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js">
-	</script>
 	<style>
     /* Prevents slides from flashing */
     #slides {
@@ -141,7 +139,9 @@
     <a href=""><span class="icon-linkedin lk"></span></a>
   </footer>
   <!-- End SlidesJS Required: Start Slides -->
-  		<script src="js/jquery.slides.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js">
+    </script>
+  	<script src="js/jquery.slides.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
   <!-- End SlidesJS Required -->
 

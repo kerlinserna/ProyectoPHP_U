@@ -232,7 +232,10 @@ estilos del seccion 2---------------------------------------------
 Para dispositivos móviles-------------------------------------------
 */
 
-
+	.margin
+{
+	margin: 0;
+}
 @media screen and (max-width:800px){
 
 	h1{
@@ -249,14 +252,25 @@ Para dispositivos móviles-------------------------------------------
 	h1{
 		padding: 0 0 4em 4.5em;
 	}
+	.margin
+{
+	margin: 1em;
+}
 	header
 	{
 		padding: 0 0 2em 0;
 	}
+	footer  a span {
+	padding-right: 0;
+}
 	.navbar-default
 	{
 		opacity: 0.8;
 	}
+/* 	.logincc input, a, img 
+{
+    margin: 0;
+} */
 	.logincc 
 {
 	display: block;
