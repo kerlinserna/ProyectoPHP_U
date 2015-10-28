@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
 	<link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
-	<style>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js">
+  </script>
+  <style>
     /* Prevents slides from flashing */
     #slides {
       display:none;
@@ -130,17 +132,17 @@
   <footer id="contact">
     <p>Todos los derechos reservados ®</p>
     <p>Powered by Juan Diego Zapata y Kerly Serna</p>
-    <a href="https://www.facebook.com/profile.php?id=1514988450">
-    <span class="icon-facebook fb"></span></a>
-    <a href="https://instagram.com/juandiegozapatad/">
+    <a href="https://www.facebook.com/profile.php?id=1514988450" target="_blank">
+    <span class="icon-facebook fb" target="_blank"></span></a>
+    <a href="https://instagram.com/juandiegozapatad/" target="_blank">
     <span class="icon-instagram ig"></span></a>
-    <a href="https://github.com/jdzapataduque">
+    <a href="https://github.com/jdzapataduque" target="_blank">
     <span class="icon-github gh"></span></a>
-    <a href=""><span class="icon-linkedin lk"></span></a>
+    <a href="https://www.linkedin.com/profile/view?id=AAIAABs429wBAe
+    qWYJjeM0yxnVMM9Sc4dDTkwo4&trk=nav_responsive_tab_profile" target="_blank">
+    <span class="icon-linkedin lk" target="_blank"></span></a>
   </footer>
   <!-- End SlidesJS Required: Start Slides -->
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js">
-    </script>
   	<script src="js/jquery.slides.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
   <!-- End SlidesJS Required -->

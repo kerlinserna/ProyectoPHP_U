@@ -1,13 +1,13 @@
 	<?php 
 
-	require '../Models/clsConx.php';
+	include_once '../Models/clsConx.php';
 
-	require '../Models/clsCourses.php';
+	include_once '../Models/clsCourses.php';
 
 	$cursos=getcursos(conectar());
 
 	require '../Views/courses.php';
 
-	CerrarConx(conectar());
+
 
 	 ?>

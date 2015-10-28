@@ -10,7 +10,7 @@ require '../Models/ClsLogin.php';
 	if (login($usuario,$clave)) 
 	{
 		$_SESSION['usuario']=$usuario;
-		require '../Controller/ctlrCourses.php';
+		require 'ctlrCourses.php';
 	}
 	else
 	{

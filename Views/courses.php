@@ -4,8 +4,7 @@
 
 		if (!isset($sesion)) 
 		{
-		header("Location:../Views/login.php?Mensaje=No has iniciado Sesión");			 
-		
+		header("Location:../Views/login.php?Mensaje=No has iniciado Sesión");
 		}
 		 ?>
 	<!DOCTYPE html>
@@ -22,7 +21,7 @@
 		<link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
 		</head>
 	<body>
-	<form action="" class="formcourses">
+	<form action="../Controller/ctrlMatricula.php" method="POST" class="formcourses">
 	<h2>Courses of CC</h2>
 		<select name="usu" class="combobox">
 		<?php 
@@ -69,23 +68,23 @@
 		<form role="form" class="tipos">
 		<h5>Tipo de Empleado</h5>
 	    <label class="radio-inline">
-	      <input type="radio" name="optradio">Option 1
+	      <input type="radio" name="tprofe" value="decano" required>DECANO
 	    </label>
 	    <label class="radio-inline">
-	      <input type="radio" name="optradio">Option 2
+	      <input type="radio" name="tprofe" value="profesor" required>PROFESOR
 	    </label>
 	    <label class="radio-inline">
-	      <input type="radio" name="optradio">Option 3
+	      <input type="radio" name="tprofe" value="secretaria" required>SECRETARIA
 	    </label>
 	    <h5>Forma de Pago</h5>
 	    <label class="radio-inline">
-	      <input type="radio" name="optradio">Option 1
+	      <input type="radio" name="fpago" value="tdebito" required>TDEBITO
 	    </label>
 	    <label class="radio-inline">
-	      <input type="radio" name="optradio">Option 2
+	      <input type="radio" name="fpago" value="tcredito" required>TCREDITO
 	    </label>
 	    <label class="radio-inline">
-	      <input type="radio" name="optradio">Option 3
+	      <input type="radio" name="fpago" value="efectivo" required>EFECTIVO
 	    </label>
 	    <br>
 	    <br>
