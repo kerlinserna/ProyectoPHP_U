@@ -14,6 +14,7 @@
 {
   color: red;
   font-family: 1.5em;
+  text-align: center;
 }
   </style>
   <body>

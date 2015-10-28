@@ -2,7 +2,7 @@
 
 	function getcursos($conexion)
 	{
-	  $sql="select * from tblcursos";
+	  $sql="call combo_cargarcursos";
 
 	  $consulta=$conexion->query($sql);
 
