@@ -1,11 +1,11 @@
 		<?php 
 
 		$sesion=$_SESSION['usuario'];
-
 		if (!isset($sesion)) 
 		{
 		header("Location:../Views/login.php?Mensaje=No has iniciado Sesión");
 		}
+		$_SESSION['usuario']="ok";
 		 ?>
 	<!DOCTYPE html>
 	<html lang="en">
@@ -20,12 +20,28 @@
 		<link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
 		</head>
+		  <style>
+  p
+{
+  color: red;
+  font-family: 1.5em;
+  text-align: center;
+}
+  </style>
 	<body>
 	<form action="../Controller/ctrlMatricula.php" method="POST" class="formcourses">
 	<h2>Courses of CC</h2>
-		<select name="usu" class="combobox">
-		<?php 
+	  <?php 
 
+if (isset($_REQUEST["Mensaje"])) {
+  
+  $mensaje=$_REQUEST["Mensaje"];
+  echo "<p>$mensaje</p>";
+}
+ ?>
+		<select name="ccursos" class="combobox">
+		<?php 
+		//Cargar cursos al combo
 		foreach($cursos as $fila )
 		 {
 
@@ -65,32 +81,38 @@
 		<input type="text" name="codmatri" class="input" required 
 		placeholder="Ingrese Código matrícula">
 		<br><br>
-		<form role="form" class="tipos">
 		<h5>Tipo de Empleado</h5>
-	    <label class="radio-inline">
-	      <input type="radio" name="tprofe" value="decano" required>DECANO
-	    </label>
-	    <label class="radio-inline">
-	      <input type="radio" name="tprofe" value="profesor" required>PROFESOR
-	    </label>
-	    <label class="radio-inline">
-	      <input type="radio" name="tprofe" value="secretaria" required>SECRETARIA
-	    </label>
+	 <select name="templeado" class="combobox">
+		<?php 
+
+		foreach($templ as $fila )
+		 {
+		 	//Cargar cargos de empleado al combo
+		   echo "<option value='".$fila['codigo_cargo']."'>".
+		   $fila['descripcion_cargo'];
+
+		 }
+		 
+		 ?>
+		</select>
 	    <h5>Forma de Pago</h5>
-	    <label class="radio-inline">
-	      <input type="radio" name="fpago" value="tdebito" required>TDEBITO
-	    </label>
-	    <label class="radio-inline">
-	      <input type="radio" name="fpago" value="tcredito" required>TCREDITO
-	    </label>
-	    <label class="radio-inline">
-	      <input type="radio" name="fpago" value="efectivo" required>EFECTIVO
-	    </label>
+		<select name="fpago" class="combobox">
+		<?php 
+
+		foreach($fpagos as $fila )
+		 {
+		 //Cargar forma de pago al combo
+		   echo "<option value='".$fila['CODIGO_PAGO']."'>".
+		   $fila['NOMBRE_PAGO'];
+
+		 }
+		 
+		 ?>
+		</select>
 	    <br>
 	    <br>
 	  <input type="submit" name="btnaceptar" class="btn btn-primary" 
 	  value="Inscribir" id="btnaceptar"/>
-	  </form>
 	</form>
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js">
 	</script>
