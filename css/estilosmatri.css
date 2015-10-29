@@ -1,0 +1,20 @@
+body{
+		background-color: #d9edf7;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+		  h5
+		{
+		  color: red;
+		  font-size: 1.48em;
+		}
+		div
+		{
+			text-align: center;
+			margin: 5em;
+		}
+		img
+		{
+			width: 270px;
+			height: 270px;
+		}
+   
