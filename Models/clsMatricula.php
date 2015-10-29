@@ -10,7 +10,7 @@
 		if ($conn->query($sql) === true)
 		{
 
-		header("Location:../Views/matricula.php?Mensaje=Matricula Exitosa");
+		header("Location:../Views/matricula.php?Mensaje=Matrícula Exitosa");
 		} 
 		else 
 		{

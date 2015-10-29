@@ -14,10 +14,10 @@
 		$templeado=$_POST['templeado'];
 
 		require '../Models/clsConx.php';
-
+		$con=conectar();
 		require '../Models/clsMatricula.php';
 
-		matricula(conectar(),$cedcliente,$nombres,$edad,$telefono,$celular,
+		matricula($con,$cedcliente,$nombres,$edad,$telefono,$celular,
 	    $direccion,$templeado,$fpago,$codmatri,$codcurso);
 
  ?>
