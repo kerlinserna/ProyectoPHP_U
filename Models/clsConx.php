@@ -15,6 +15,7 @@
 	   } catch (Exception $e) {
 	   	echo "Error de Conexión ".$e->getMessage()."\n";
 		}
+		return $conexion;	
 	}
    function CerrarConx( $conexion )
     {

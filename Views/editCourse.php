@@ -15,10 +15,13 @@ session_start();
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/editcourses.css">
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js">
+  </script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
 	</head>
 	<body>
-	<form action="../Controller/ctrlRegistro.php" method="POST" name="reg" class="reg">
+	<form action="../Controller/ctrlEditCourse.php" method="POST" name="reg" class="reg">
     <img src="../img/me.png" id="yo"/>
   <h2>editar cursos</h2>
   <div class="container">           
@@ -36,7 +39,7 @@ session_start();
 		foreach($cursos as $fila )
 		 {
 		 	//Cargar cargos de empleado al combo
-		   	echo "<tr>";
+		  echo "<tr>";
 			echo "<td>".$fila['codigo_curso']."</td>";
 			echo "<td>".$fila['titulo_curso']."</td>";
 			echo "<td>".$fila['nhoras_curso']."</td>";
@@ -48,34 +51,47 @@ session_start();
     </tbody>
   </table>
 </div>
+   <br>  
   <?php 
-
-	if (isset($_REQUEST["Mensaje"])) {
-	  
-	  $mensaje=$_REQUEST["Mensaje"];
-	  echo "<p>$mensaje</p>";
-	}
+  if (isset($_REQUEST["Mensaje"])) {
+    
+    $mensaje=$_REQUEST["Mensaje"];
+    echo "<div class='alert alert-info' id='myAlert'>";
+    echo "<a href='#'' class='close'>&times;</a>";
+    echo "<img src='../img/me.png'>";
+    echo "<h4><strong>Información!</strong></h4>";
+    echo "<h5>$mensaje</h5>";
+  }
  ?>
+  </div>
+  <select name="opcion" class="combobox">
+  <option value="edit">Editar Curso</option>
+  <option value="delete">Eliminar Curso</option>
+  <option value="insert">Insertar Curso</option>
+  </select>
     <div class="question">
   <h5>Código Curso:</h5>
-    <input type="text" name="codempl" class="inputs" required/>
+    <input type="text" name="codcurso" class="inputs" required/>
   </div>
     <div class="question">
-  <h5>Cédula:</h5>
-    <input type="text" name="cedula" class="inputs" required/>
-  </div>
    <h5>Nuevo Nombre Curso:</h5>
-    <input type="text" name="cedula" class="inputs" required/>
+    <input type="text" name="nombre" class="inputs" required/>
   </div>
    <h5>Nuevo Número de Horas:</h5>
-    <input type="text" name="cedula" class="inputs" required/>
+    <input type="text" name="horas" class="inputs" required/>
   </div>
-  <br>
   <br>
   <div class="margin">
 <input type="submit" name="aceptar" value="Aceptar" class="btn btn-primary">
 <input type="reset" name="borrar" value="Borrar" class="btn btn-danger">
 </div>
 </form>
+<script>
+$(document).ready(function(){
+    $(".close").click(function(){
+    $("#myAlert").alert("close");
+    });
+});
+</script>
 </body>
 </html>
