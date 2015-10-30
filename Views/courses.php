@@ -1,11 +1,8 @@
 		<?php 
-
-		$sesion=$_SESSION['usuario'];
-		if (!isset($sesion)) 
+		if (!isset($_SESSION['usuario'])) 
 		{
 		header("Location:../Views/login.php?Mensaje=No has iniciado Sesión");
 		}
-		$_SESSION['usuario']="ok";
 		 ?>
 	<!DOCTYPE html>
 	<html lang="en">
@@ -27,10 +24,23 @@
   font-family: 1.5em;
   text-align: center;
 }
+form li a
+{
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #337AB7;
+	list-style-type: none;
+}
+li{
+	list-style-type: none;
+}
   </style>
 	<body>
 	<form action="../Controller/ctrlMatricula.php" method="POST" class="formcourses">
 	<h2>Courses of CC</h2>
+	<li><a href="../Controller/ctrlEditCourse.php">Edita Los cursos de CC
+	</a></li>
+	<br>
 	  <?php 
 
 if (isset($_REQUEST["Mensaje"])) {

@@ -15,18 +15,18 @@
 		background-color: #2196F3;
 	}
 	 #yo
-{
+	{
 	width: 130px;
 	height: 120px;
 	margin-bottom: 20px;
 	border-radius: 50%;
-}
-p
-{
-	color: red;
-	font-family: 1.5em;
-	text-transform: uppercase;
-}
+	}
+	p
+	{
+		color: red;
+		font-family: 1.5em;
+		text-transform: uppercase;
+	}
 	</style>
 </head>
 <body>

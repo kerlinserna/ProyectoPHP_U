@@ -64,7 +64,8 @@
 				<ul class="nav navbar-nav" id="main-menu">
 			<li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 			<li><a href="Views/courses.php" target="_blank"> <span class="glyphicon glyphicon-education"></span> Courses</a></li>
-			<li><a href="Views/login.php"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+			<li><a href="Controller/ctrlEditCourse.php" target="_blank"> <span class="glyphicon glyphicon-education"></span> Edit Courses</a></li>
+      <li><a href="Views/login.php"><span class="glyphicon glyphicon-user"></span> Login</a></li>
 			<li><a href="Views/registro.php"><span class="glyphicon glyphicon-registration-mark"></span> Registrarse</a></li>
 			<li><a href="#contact"><span class="glyphicon glyphicon-send"></span> Contact</a></li>
 				</ul>
