@@ -18,10 +18,16 @@ session_start();
   <script src="https://code.jquery.com/jquery-1.11.2.min.js">
   </script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
+  <link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
 	</head>
 	<body>
 	<form action="../Controller/ctrlEditCourse.php" method="POST" name="reg" class="reg">
+      <div class="alert alert-info">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong><h2>Info!</h2></strong>
+    Al Momento de insertar un curso, no es necesario ingresarle el código
+    ya que el sistema lo generará automáticamente
+  </div>
     <img src="../img/me.png" id="yo"/>
   <h2>editar cursos</h2>
   <div class="container">           
@@ -64,14 +70,14 @@ session_start();
   }
  ?>
   </div>
-  <select name="opcion" class="combobox">
-  <option value="edit">Editar Curso</option>
-  <option value="delete">Eliminar Curso</option>
-  <option value="insert">Insertar Curso</option>
+  <select name="opcion" class="combobox" id="opcion">
+  <option value="edit" id="edit">Editar Curso</option>
+  <option value="delete" id="delete">Eliminar Curso</option>
+  <option value="insert" id="insert">Insertar Curso</option>
   </select>
     <div class="question">
-  <h5>Código Curso:</h5>
-    <input type="text" name="codcurso" class="inputs" required/>
+  <h5 id="titulo">Código Curso:</h5>
+    <input type="text" name="codcurso" id="codcurso" class="inputs" required/>
   </div>
     <div class="question">
    <h5>Nuevo Nombre Curso:</h5>
@@ -93,5 +99,6 @@ $(document).ready(function(){
     });
 });
 </script>
+<script src="../js/courses.js"></script>
 </body>
 </html>

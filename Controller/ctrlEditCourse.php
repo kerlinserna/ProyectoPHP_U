@@ -10,16 +10,17 @@
 		$horas=$_POST['horas'];
 		$opcion=$_POST['opcion'];
 		
-		if (validarCodigo($con,$codcurso,$nombre,$horas)) 
+		if ($opcion=="insert") 
+			{
+			   $con=conectar();
+			   insertarCurso($con,$codcurso,$nombre,$horas);
+			}
+		elseif (validarCodigo($con,$codcurso,$nombre,$horas)) 
 		{	
 			if ($opcion=='edit')
 			{
 			$con=conectar();
 			actualizarCurso($con,$codcurso,$nombre,$horas);
-			}elseif ($opcion=="insert") 
-			{
-			   $con=conectar();
-			   insertarCurso($con,$codcurso,$nombre,$horas);
 			}
 			else
 			{
