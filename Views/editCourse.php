@@ -9,7 +9,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Editar Cursos</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -24,9 +24,9 @@ session_start();
 	<form action="../Controller/ctrlEditCourse.php" method="POST" name="reg" class="reg">
       <div class="alert alert-info">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong><h2>Info!</h2></strong>
-    Al Momento de insertar un curso, no es necesario ingresarle el código
-    ya que el sistema lo generará automáticamente
+    <strong><h2>Informacion!</h2></strong>
+    Al Momento de insertar un curso,ingresa cualquier código,
+    ya que el sistema lo creará automáticamente
   </div>
     <img src="../img/me.png" id="yo"/>
   <h2>editar cursos</h2>
@@ -99,6 +99,5 @@ $(document).ready(function(){
     });
 });
 </script>
-<script src="../js/courses.js"></script>
 </body>
 </html>
