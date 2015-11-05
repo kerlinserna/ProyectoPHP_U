@@ -3,12 +3,12 @@
 		$con=conectar();
 		require '../Models/clsCourses.php';
 		$ced=$_POST['cedula'];
-
-		if (!validarCedula($con,$ced)) 
+		$cod=$_POST['codmatri'];
+		if (!validarCedula($con,$ced,$cod)) 
 		{
-header("Location:../Controller/ctlrCourses.php?Mensaje=El cliente ya existe");
+header("Location:../Controller/ctlrCourses.php?Mensaje=El cliente o la matrícula ya existe");
 		return;
-			}
+		}
 		session_start();
 		$_SESSION['usuario']="jdzapata";
 		
