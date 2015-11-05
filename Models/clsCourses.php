@@ -43,4 +43,22 @@
 	 }
 	 return $tipo;
 	}
+	function validarCedula($conn,$cedula)
+	{
+	    $sql="call validarCedula($cedula);";
+
+		$total = mysqli_num_rows(mysqli_query($conn,$sql));
+		if($total==0)
+		{
+
+		$conn->close();
+		return true;
+
+		}
+		else
+		{
+		$conn->close();
+		return false;
+		}	
+	}
  ?>

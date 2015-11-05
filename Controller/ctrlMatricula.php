@@ -1,4 +1,14 @@
 <?php 
+		require '../Models/clsConx.php';
+		$con=conectar();
+		require '../Models/clsCourses.php';
+		$ced=$_POST['cedula'];
+
+		if (!validarCedula($con,$ced)) 
+		{
+header("Location:../Controller/ctlrCourses.php?Mensaje=El cliente ya existe");
+		return;
+			}
 		session_start();
 		$_SESSION['usuario']="jdzapata";
 		
@@ -13,7 +23,6 @@
 		$codcurso=$_POST['ccursos'];
 		$templeado=$_POST['templeado'];
 
-		require '../Models/clsConx.php';
 		$con=conectar();
 		require '../Models/clsMatricula.php';
 

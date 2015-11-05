@@ -1,8 +1,8 @@
 		<?php 
-		if (!isset($_SESSION['usuario'])) 
+	/*	if (!isset($_SESSION['usuario'])) 
 		{
 		header("Location:../Views/login.php?Mensaje=No has iniciado Sesión");
-		}
+		}*/
 		 ?>
 	<!DOCTYPE html>
 	<html lang="en">

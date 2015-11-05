@@ -1,7 +1,7 @@
 <?php 
-session_start();
+    session_start();
 
-		if (!isset($_SESSION['usuario'])) 
+		if(!isset($_SESSION['usuario'])) 
 		{
 		header("Location:../Views/login.php?Mensaje=No has iniciado Sesión");
 		}

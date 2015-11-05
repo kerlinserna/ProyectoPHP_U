@@ -12,11 +12,13 @@
 		}
 		 return $conexion;	
 
-	   } catch (Exception $e) {
+	   } catch (Exception $e)
+	    {
 	   	echo "Error de Conexión ".$e->getMessage()."\n";
 		}
-		return $conexion;	
+/*		return $conexion;	*/
 	}
+
    function CerrarConx( $conexion )
     {
 		$conexion->close();
