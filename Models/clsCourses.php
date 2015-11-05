@@ -56,12 +56,8 @@
 			return false;
 			
 		 }
-		 else
-		 {
 			$conn->close();
 			return true;
-
-		 }
 		}
 		else
 		{
