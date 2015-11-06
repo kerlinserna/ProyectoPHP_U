@@ -1,3 +1,11 @@
+<?php 
+    	session_start();
+
+		if(!isset($_SESSION['usuario'])) 
+		{
+		header("Location:../Views/login.php?Mensaje=No has iniciado Sesión");
+		}
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,17 +20,20 @@
 	</head>
    </head>
 	<body>
+	<form action="../Controller/ctrlMatricula.php" method="POST">
 	  <div class="alert alert-info">
 	  <img src="../img/me.png">
 	  <br>
     <h3><strong>Información!</strong></h3>
-    	<?php 
+    <?php 
 	if (isset($_REQUEST["Mensaje"])) {
 	  
 	  $mensaje=$_REQUEST["Mensaje"];
 	  echo "<h5>$mensaje</h5>";
 	}
  ?>
+ <input type="submit" name="inicio" class="btn btn-success" value="Cerrar Sesión">
   </div>
+  </form>
 </body>
 </html>

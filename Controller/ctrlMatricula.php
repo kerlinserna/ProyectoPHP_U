@@ -1,7 +1,14 @@
 <?php 
-		session_start();
+		if (isset($_POST['inicio'])) 
+		{
+			session_destroy();
+			$_SESSION['usuario']=null;	
+			header("Location:../index.php");
+			return;
+		}
+/*		session_start();
 		$_SESSION['usuario']="jdzapata";
-
+*/
 		require '../Models/clsConx.php';
 		$con=conectar();
 		$ced=$_POST['cedula'];

@@ -1,5 +1,4 @@
 <?php
-
 	require '../Models/clsConx.php'; 
 	$con=conectar();
 	require '../Models/clseditCourse.php'; 	
