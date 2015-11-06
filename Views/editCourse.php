@@ -20,6 +20,25 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
 	</head>
+    <script>
+  function numeros(e){
+    key = e.keyCode || e.which;
+    tecla = String.fromCharCode(key).toLowerCase();
+    letras = " 0123456789";
+    especiales = [8,37,39,46];
+ 
+    tecla_especial = false
+    for(var i in especiales){
+ if(key == especiales[i]){
+     tecla_especial = true;
+     break;
+        } 
+    }
+ 
+    if(letras.indexOf(tecla)==-1 && !tecla_especial)
+        return false;
+}
+  </script>
 	<body>
 	<form action="../Controller/ctrlEditCourse.php" method="POST" name="reg" class="reg">
       <div class="alert alert-info">
@@ -77,14 +96,16 @@
   </select>
     <div class="question">
   <h5 id="titulo">Código Curso:</h5>
-    <input type="text" name="codcurso" id="codcurso" class="inputs" required/>
+    <input type="text" name="codcurso" id="codcurso" class="inputs"
+    onkeypress="return numeros(event)" required/>
   </div>
     <div class="question">
    <h5>Nuevo Nombre Curso:</h5>
     <input type="text" name="nombre" class="inputs" required/>
   </div>
    <h5>Nuevo Número de Horas:</h5>
-    <input type="text" name="horas" class="inputs" required/>
+    <input type="text" name="horas" class="inputs" 
+    onkeypress="return numeros(event)" required/>
   </div>
   <br>
   <div class="margin">

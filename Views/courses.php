@@ -36,6 +36,25 @@ li{
 	list-style-type: none;
 }
   </style>
+  <script>
+  function numeros(e){
+    key = e.keyCode || e.which;
+    tecla = String.fromCharCode(key).toLowerCase();
+    letras = " 0123456789";
+    especiales = [8,37,39,46];
+ 
+    tecla_especial = false
+    for(var i in especiales){
+ if(key == especiales[i]){
+     tecla_especial = true;
+     break;
+        } 
+    }
+ 
+    if(letras.indexOf(tecla)==-1 && !tecla_especial)
+        return false;
+}
+  </script>
 	<body>
 	<form action="../Controller/ctrlMatricula.php" method="POST" class="formcourses">
 	<h2>Courses of CC</h2>
@@ -66,7 +85,7 @@ if (isset($_REQUEST["Mensaje"])) {
 		<br>
 		<br>
 		<input type="text" name="cedula" class="input" required 
-		placeholder="Ingrese Cédula del Estudiante">
+		placeholder="Ingrese Cédula del Estudiante" onkeypress="return numeros(event)">
 		<br>
 		<br>
 		<input type="text" name="nombres" class="input" required 
@@ -74,15 +93,15 @@ if (isset($_REQUEST["Mensaje"])) {
 		<br>
 		<br>
 		<input type="text" name="edad" class="input" required 
-		placeholder="Ingrese Edad">
+		placeholder="Ingrese Edad" onkeypress="return numeros(event)">
 		<br>
 		<br>
 		<input type="text" name="telefono" class="input" required 
-		placeholder="Ingrese Teléfono">
+		placeholder="Ingrese Teléfono" onkeypress="return numeros(event)">
 		<br>
 		<br>
 		<input type="text" name="celular" class="input" required 
-		placeholder="Ingrese Celular">
+		placeholder="Ingrese Celular" onkeypress="return numeros(event)">
 		<br>
 		<br>
 		<input type="text" name="direccion" class="input" required 
@@ -90,7 +109,7 @@ if (isset($_REQUEST["Mensaje"])) {
 		<br>
 		<br>
 		<input type="text" name="codmatri" class="input" required 
-		placeholder="Ingrese Código matrícula">
+		placeholder="Ingrese Código matrícula" onkeypress="return numeros(event)">
 		<br><br>
 		<h5>Tipo de Empleado</h5>
 	 <select name="templeado" class="combobox">
