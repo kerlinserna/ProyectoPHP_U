@@ -1,8 +1,9 @@
-		<?php 
-	/*	if (!isset($_SESSION['usuario'])) 
+		<?php
+
+		if (!isset($_SESSION['usuario'])) 
 		{
 		header("Location:../Views/login.php?Mensaje=No has iniciado Sesión");
-		}*/
+		}
 		 ?>
 	<!DOCTYPE html>
 	<html lang="en">
@@ -17,7 +18,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/504/php-512.png">
 		</head>
-		  <style>
+		<style>
   p
 {
   color: red;

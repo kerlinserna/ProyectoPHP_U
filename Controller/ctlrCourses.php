@@ -1,7 +1,9 @@
-	<?php 
-	include_once '../Models/clsConx.php';
+	<?php
+	
+	$_SESSION['usuario']="jdzapata"; 
+	require '../Models/clsConx.php';
 
-	include_once '../Models/clsCourses.php';
+	require '../Models/clsCourses.php';
 
 	$cursos=getcursos(conectar());
 	$fpagos=getformasdePago(conectar());

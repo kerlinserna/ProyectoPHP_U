@@ -43,44 +43,39 @@
 	 }
 	 return $tipo;
 	}
-	function validarCedula($conn,$cedula,$cod)
+	function validarCedula($conn,$cedula)
 	{
-	    $sql="call validarCedula($cedula);";
+	    $sql="call validarCedula('$cedula');";
 
 		$total = mysqli_num_rows(mysqli_query($conn,$sql));
 		if($total==0)
 		{
-			if (!validarmatri($conn,$cod)) 
-		 {
+	
 		 	$conn->close();
-			return false;
-			
-		 }
-			$conn->close();
 			return true;
 		}
 		else
 		{
-		$conn->close();
-		return false;
+			$conn->close();
+			return false;
 		}	
 	}
 	function validarmatri($conn,$cod)
 	{
-	    $sql="call validarCodMatri($cod);";
+	    $sql="call validarCodMatri('$cod');";
 
 		$total = mysqli_num_rows(mysqli_query($conn,$sql));
 		if($total==0)
 		{
 
-		$conn->close();
-		return true;
+			$conn->close();
+			return true;
 
 		}
 		else
 		{
-		$conn->close();
-		return false;
+			$conn->close();
+			return false;
 		}	
 	}
  ?>

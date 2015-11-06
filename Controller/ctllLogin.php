@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
 $usuario=$_POST['usuario'];
 
@@ -9,7 +9,8 @@ require '../Models/ClsLogin.php';
 
 	if (login($usuario,$clave)) 
 	{
-		$_SESSION['usuario']=$usuario;
+		session_start();
+		$_SESSION['usuario']="jdzapata";
 		require 'ctlrCourses.php';
 	}
 	else

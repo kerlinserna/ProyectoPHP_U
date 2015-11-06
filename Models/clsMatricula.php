@@ -9,12 +9,11 @@
 
 		if ($conn->query($sql) === true)
 		{
-
+		
 		header("Location:../Views/matricula.php?Mensaje=Matrícula Exitosa");
 		} 
 		else 
 		{
-
     	header("Location:../Views/matricula.php?Mensaje=Ocurrió un error en la matricula");
 
 		}
