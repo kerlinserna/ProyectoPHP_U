@@ -3,7 +3,7 @@
 
 		if(!isset($_SESSION['usuario'])) 
 		{
-		header("Location:../Views/login.php?Mensaje=No has iniciado Sesión");
+		header("Location:../Views/login.php?Mensaje=No has iniciado Sesión para editar Cursos");
 		}
  ?>
 <!DOCTYPE html>

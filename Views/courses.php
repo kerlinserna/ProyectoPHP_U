@@ -1,8 +1,9 @@
 		<?php
+		session_start();
 
-		if (!isset($_SESSION['usuario'])) 
+		if(!isset($_SESSION['usuario'])) 
 		{
-		header("Location:../Views/login.php?Mensaje=No has iniciado Sesión");
+		header("Location:../Views/login.php?Mensaje=No has iniciado Sesión para los cursos");
 		}
 		 ?>
 	<!DOCTYPE html>

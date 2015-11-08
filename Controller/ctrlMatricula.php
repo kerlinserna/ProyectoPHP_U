@@ -2,13 +2,13 @@
 		if (isset($_POST['inicio'])) 
 		{
 			session_destroy();
-			$_SESSION['usuario']=null;	
-			header("Location:../index.php");
+			$_SESSION['usuario']=NULL;	
+			header("Location:../");
 			return;
 		}
-/*		session_start();
+		session_start();
 		$_SESSION['usuario']="jdzapata";
-*/
+
 		require '../Models/clsConx.php';
 		$con=conectar();
 		$ced=$_POST['cedula'];

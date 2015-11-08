@@ -1,6 +1,4 @@
 	<?php
-	
-	$_SESSION['usuario']="jdzapata"; 
 	require '../Models/clsConx.php';
 
 	require '../Models/clsCourses.php';
@@ -10,7 +8,4 @@
 	$templ=getTipoEmpleado(conectar());
 
 	require '../Views/courses.php';
-
-
-
 	 ?>

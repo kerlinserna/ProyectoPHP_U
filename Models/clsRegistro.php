@@ -18,6 +18,40 @@
 
 		}
 		$conn->close();
+	}
+		function validarCodEmpl($conn,$cod)
+	{
+	    $sql="call validarCodempl('$cod');";
+
+		$total = mysqli_num_rows(mysqli_query($conn,$sql));
+		if($total==0)
+		{
+	
+		 	$conn->close();
+			return true;
+		}
+		else
+		{
+			$conn->close();
+			return false;
+		}	
+	} 
+		function validarCedEmpl($conn,$ced)
+	{
+	    $sql="call validarCedEmpl('$ced');";
+
+		$total = mysqli_num_rows(mysqli_query($conn,$sql));
+		if($total==0)
+		{
+	
+		 	$conn->close();
+			return true;
+		}
+		else
+		{
+			$conn->close();
+			return false;
+		}	
 	} 
 
 

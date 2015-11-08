@@ -32,7 +32,7 @@ if (isset($_REQUEST["Mensaje"])) {
 }
  ?>
     <div class="question">
-  <h5>Codigo Curso:</h5>
+  <h5>Codigo Empleado:</h5>
     <input type="text" name="codempl" required/>
   </div>
     <div class="question">
