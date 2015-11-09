@@ -48,7 +48,7 @@
     ya que el sistema lo creará automáticamente
   </div>
     <img src="../img/me.png" id="yo"/>
-  <h2>editar cursos</h2>
+      <h2>editar cursos</h2>
   <div class="container">           
   <table class="table table-hover">
     <thead>
@@ -113,6 +113,13 @@
 <input type="reset" name="borrar" value="Borrar" class="btn btn-danger">
 </div>
 </form>
+ <form action="../Controller/ctrlEditCourse.php" method="POST"
+     name="reg" class="reg">
+    <input type="submit" name="inicio" class="btn btn-success" 
+    value="Cerrar Sesión">
+    <br>
+    <br>
+    </form>
 <script>
 $(document).ready(function(){
     $(".close").click(function(){

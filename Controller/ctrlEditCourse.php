@@ -2,7 +2,15 @@
 
 	require '../Models/clsConx.php'; 
 	$con=conectar();
-	require '../Models/clseditCourse.php'; 	
+	require '../Models/clseditCourse.php';
+	if (isset($_POST['inicio'])) 
+		{
+			session_start();
+			$_SESSION['usuario']=NULL;
+			session_destroy();	
+			header("Location:../");
+			return;
+		} 	
 	if (isset($_POST['aceptar'])) 
 	{
 		$codcurso=$_POST['codcurso'];

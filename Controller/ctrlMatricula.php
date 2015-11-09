@@ -1,8 +1,9 @@
 <?php 
 		if (isset($_POST['inicio'])) 
 		{
-			session_destroy();
-			$_SESSION['usuario']=NULL;	
+			session_start();
+			$_SESSION['usuario']=NULL;
+			session_destroy();	
 			header("Location:../");
 			return;
 		}

@@ -145,6 +145,13 @@ if (isset($_REQUEST["Mensaje"])) {
 	  <input type="submit" name="btnaceptar" class="btn btn-primary" 
 	  value="Inscribir" id="btnaceptar"/>
 	</form>
+	 <form action="../Controller/ctrlMatricula.php" method="POST"
+     name="reg" class="reg">
+     <center><input type="submit" name="inicio" class="btn btn-success" 
+    value="Cerrar Sesión"></center>
+    <br>
+    <br>
+    </form>
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js">
 	</script>
 	<script src="../js/bootstrap.min.js"></script>
