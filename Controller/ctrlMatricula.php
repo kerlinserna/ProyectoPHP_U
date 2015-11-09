@@ -7,8 +7,8 @@
 			header("Location:../");
 			return;
 		}
-		session_start();
-		$_SESSION['usuario']="jdzapata";
+/*		session_start();
+		$_SESSION['usuario']="jdzapata";*/
 
 		require '../Models/clsConx.php';
 		$con=conectar();

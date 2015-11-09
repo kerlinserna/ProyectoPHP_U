@@ -7,8 +7,8 @@
 	if ( !validarCodEmpl(conectar(),$codempl) || !validarCedEmpl(conectar(),
 	$cedula ) ) 
 	{
-		header("Location:../Views/registro.php?Mensaje=Cédula o Código empleado ya existen");
-		return;
+	header("Location:../Views/registro.php?Mensaje=Cédula o Código empleado ya existen");
+	return;
 	}
 
 	
